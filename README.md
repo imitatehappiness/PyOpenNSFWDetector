@@ -1,5 +1,6 @@
 
-![title](https://github.com/imitatehappiness/PyOpenNSFWDetector/assets/79199956/aa09fd3d-dd60-47be-a05d-a86398dd0152)
+![title](https://github.com/imitatehappiness/PyOpenNSFWDetector/assets/79199956/b06bee1b-86e4-42ad-a67a-f245d29110bb)
+
 
 # PyOpenNSFWDetector
 
