@@ -1,8 +1,8 @@
 
 
-# PyNSFWDetector
+# PyOpenNSFWDetector
 
-PyNSFWDetector is a project that uses machine learning to detect nudity in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
+PyOpenNSFWDetector is a project that uses machine learning to detect nudity in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
 
 ### The result has binary values: 
 * 0 if there is no nudity in the photo
@@ -10,7 +10,7 @@ PyNSFWDetector is a project that uses machine learning to detect nudity in photo
 
 ## Quick start
 ```bash
-git clone https://github.com/imitatehappiness/PyNSFWDetector.git
+git clone https://github.com/imitatehappiness/PyOpenNSFWDetector.git
 cd PyNudeDetector
 pip install -r requirements.txt
 python example.py 
