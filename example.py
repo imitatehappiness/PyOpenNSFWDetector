@@ -1,7 +1,7 @@
-from detector.detector import NSFWPredictor
+from detector.detector import NSFWDetector
 
 model_path = 'model/nude_detector_model.h5'
-NSFW_predictor = NSFWPredictor(model_path)
+NSFW_detector = NSFWDetector(model_path)
 
 paths_regular = [
 	'https://s.pfst.net/2022.08/70055736670802f84a85b2eb23a7c5db81414ac2efd9e_b.jpg',
@@ -38,7 +38,7 @@ paths_adult = [
 ]
 
 path = 'https://s.pfst.net/2022.08/6971621667080909e89391f886395410b385c888ab881_b.jpg'
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))
 
 path = "resources\\local_image_adult.jpg"
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))

@@ -3,12 +3,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'detector')))
-from detector import NSFWPredictor
+from detector import NSFWDetector
 
-class TestImagePredictor(unittest.TestCase):
+class TestNSFWDetector(unittest.TestCase):
 	def setUp(self):
 		self.model_path = 'model/nude_detector_model.h5'
-		self.predictor = NSFWPredictor(self.model_path)
+		self.predictor = NSFWDetector(self.model_path)
 
 	def test_predict_from_url(self):
 		print("\n[TEST] predict_from_url")

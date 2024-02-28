@@ -1,8 +1,8 @@
 
 
-# PyNudeDetector
+# PyOpenNSFWDetector
 
-PyNudeDetector is a project that uses machine learning to detect nudity in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
+PyOpenNSFWDetector is a project that uses machine learning to detect nudity in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
 
 ### The result has binary values: 
 * 0 if there is no nudity in the photo
@@ -10,7 +10,7 @@ PyNudeDetector is a project that uses machine learning to detect nudity in photo
 
 ## Quick start
 ```bash
-git clone https://github.com/imitatehappiness/PyNudeDetector.git
+git clone https://github.com/imitatehappiness/PyOpenNSFWDetector.git
 cd PyNudeDetector
 pip install -r requirements.txt
 python example.py 
@@ -18,22 +18,22 @@ python example.py
 ## Example Usage
 
 ```python
-from detector.detector import NSFWPredictor
+from detector.detector import NSFWDetector
 
 model_path = 'model/nude_detector_model.h5'
-NSFW_predictor = NSFWPredictor(model_path)
+NSFW_detector = NSFWDetector(model_path)
 
 path = 'https://s.pfst.net/2024.02/8081984667080bec99cc7d12e65a5c11aa8a70ef9cefc_b.jpg'
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))
 
 path = 'https://s.pfst.net/2022.08/6971621667080909e89391f886395410b385c888ab881_b.jpg'
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))
 
 path = "resources\\local_image_adult.jpg"
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))
 
 path = "resources\\local_image_adult.jpg"
-print("predict:", NSFW_predictor.predict(path))
+print("predict:", NSFW_detector.predict(path))
 
 ```
 
