@@ -2,7 +2,7 @@
 
 # PyOpenNSFWDetector
 
-PyOpenNSFWDetector is a project that uses machine learning to detect nudity in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
+PyOpenNSFWDetector is a project that uses machine learning to detect NSFW content in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
 
 ### The result has binary values: 
 * 0 if there is no nudity in the photo
