@@ -11,7 +11,7 @@ PyOpenNSFWDetector is a project that uses machine learning to detect nudity in p
 ## Quick start
 ```bash
 git clone https://github.com/imitatehappiness/PyOpenNSFWDetector.git
-cd PyNudeDetector
+cd PyOpenNSFWDetector
 pip install -r requirements.txt
 python example.py 
 ```
