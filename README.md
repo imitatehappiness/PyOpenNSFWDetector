@@ -40,4 +40,6 @@ path = "resources\\local_image_adult.jpg"
 print("predict:", NSFW_detector.predict(path))
 
 ```
+## Model
 
+Model from [NSFWGuard](https://github.com/midhunsankar23/NSFWGuard/tree/main)
