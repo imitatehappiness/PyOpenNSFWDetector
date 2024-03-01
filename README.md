@@ -40,6 +40,16 @@ path = "resources\\local_image_adult.jpg"
 print("predict:", NSFW_detector.predict(path))
 
 ```
+## Execution time
+```
+Execution time for 1 image: 1.008302927017212 seconds
+
+Execution time for 10 images: 2.7786076068878174 seconds
+
+Execution time for 100 images: 28.80970525741577 seconds
+
+Execution time for 1000 images: 287.2076916694641 seconds
+```
 ## Model
 
 Model from [NSFWGuard](https://github.com/midhunsankar23/NSFWGuard/tree/main)
