@@ -1,0 +1,2 @@
+###
+curl -X POST -H "Content-Type: application/json" -d '{"url": "https://s.pfst.net/2022.08/697509866708079e04652778f24a7f7392f6e8321ea03_b.jpg"}' http://127.0.0.1:5000/predict
