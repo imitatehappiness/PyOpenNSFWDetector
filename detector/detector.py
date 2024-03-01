@@ -36,7 +36,12 @@ class NSFWDetector:
 		try:
 			if path.startswith('http'):
 				response = requests.get(path)
-				img = Image.open(BytesIO(response.content))
+				
+				if response.status_code == 200:
+					img = Image.open(BytesIO(response.content))
+				else:
+					return 'error'
+
 			else:
 				img = Image.open(path)
 
