@@ -17,7 +17,8 @@ cd PyOpenNSFWDetector
 pip install -r requirements.txt
 python example.py 
 ```
-## Example Usage
+# Examples
+## 1. Example Usage
 
 ```python
 from detector.detector import NSFWDetector
@@ -38,9 +39,9 @@ print("predict:", NSFW_detector.predict(path))
 
 path = "resources\\local_image_adult.jpg"
 print("predict:", NSFW_detector.predict(path))
-
 ```
-## Execution time
+
+### Execution time
 ```
 Execution time for 1 image: 1.008302927017212 seconds
 
@@ -50,6 +51,33 @@ Execution time for 100 images: 28.80970525741577 seconds
 
 Execution time for 1000 images: 287.2076916694641 seconds
 ```
+
+## 2. Example Usage (API)
+```python
+from detector.detector import NSFWDetector
+from flask import Flask, jsonify, request
+
+model_path = 'model/nude_detector_model.h5'
+NSFW_detector = NSFWDetector(model_path)
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+	url = request.json.get('url')
+	prediction = NSFW_detector.predict(url)
+	return jsonify({'prediction': prediction})
+
+if __name__ == '__main__':
+	app.run(debug=True)
+```
+
+# API
+### /predict (POST)
+```
+curl -X POST -H "Content-Type: application/json" -d '{"url": "https://example.com/image.jpg"}' http://127.0.0.1:5000/predict
+```
+
 ## Model
 
 Model from [NSFWGuard](https://github.com/midhunsankar23/NSFWGuard/tree/main)
