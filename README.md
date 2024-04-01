@@ -4,6 +4,11 @@
 
 # PyOpenNSFWDetector
 
+![GitHub stars](https://img.shields.io/github/stars/imitatehappiness/PyOpenNSFWDetector?style=social)
+![GitHub forks](https://img.shields.io/github/forks/imitatehappiness/PyOpenNSFWDetector?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/imitatehappiness/PyOpenNSFWDetector?style=social)
+![GitHub followers](https://img.shields.io/github/followers/imitatehappiness?style=social)
+
 PyOpenNSFWDetector is a project that uses machine learning to detect **NSFW (Not Safe For Work)** content in photos. It can be useful for content filtering on social media, online stores, and other platforms where content control is required.
 
 ### The result has binary values: 
